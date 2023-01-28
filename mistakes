@@ -1,0 +1,28 @@
+quote.xpath('.//div[@class="tags"]/a/text()').getall() is used to extract the text content of all
+the <a> tags within the <div class="tags"> element. The .xpath() method is used to select elements
+using XPath selectors, which is a language used to navigate XML documents. The .getall() method is
+used to extract a list of all the selected elements' text content.
+
+Here .//div[@class="tags"]/a is a xpath expression to select all <a> tags under <div class="tags"> element.
+In this case, the xpath is used to select the tags of the quotes, it will return a list of all the tags associated
+with the quotes.
+
+You can also use .get() method instead of .getall() if you only want to extract the text content of the first selected
+element.
+
+
+.//h3 is used to select all h3 elements that are descendants of the current context node. The . at the beginning of
+the expression represents the current context node. The // following the dot is the descendant axis, which selects all
+descendants of the current context node, regardless of their level of nesting.
+
+
+ FEED_URI and FEED_FORMAT settings have been deprecated in Scrapy and replaced with the FEEDS setting. The FEEDS
+ setting allows you to specify multiple feeds in the form of a dictionary, where the key is the file URI and the value
+ is the file format.
+
+
+twisted.internet.error.ReactorNotRestartable =
+
+The os.path.join function is used to join the name of the folder ("data") and the name of the file ("quotes.json")
+into a single file path. The json.dump function is then used to write the contents of the quotes variable to the file
+in json format. Once the data is written, the file is closed with the f.close() call.
